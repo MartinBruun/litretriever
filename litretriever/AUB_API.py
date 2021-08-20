@@ -1,4 +1,5 @@
 import requests
+import json
 
 response = requests.get("https://kbdk-aub.primo.exlibrisgroup.com")
 
@@ -8,3 +9,4 @@ if response.status_code == 200:
 else:
     print("no no no")
 
+print(response.content)
